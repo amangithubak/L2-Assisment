@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Boxicons CDN for icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <div class="flex justify-between items-center w-4/5 mx-auto py-6">
+        <div class="logo flex items-center">
+          <img
+            src="images/logo.png"
+            alt="Marmeto Logo"
+            class="w-[50px] h-[36px]"
+          />
+          <span class="text-lg font-bold">Marmeto</span>
+        </div>
+        <nav class="space-x-6 text-gray-800 font-semibold">
+          <a href="#" class="hover:text-gray-500">Home</a>
+          <a href="#" class="hover:text-gray-500">Shop</a>
+          <a href="#" class="hover:text-gray-500">About</a>
+          <a href="#" class="hover:text-gray-500">Contact</a>
+        </nav>
+        <div class="flex space-x-4 text-2xl text-gray-800">
+          <i class="bx bx-search-alt-2"></i>
+          <i class="bx bx-heart"></i>
+          <i class="bx bx-cart"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Cart Section -->
+    <div class="cart-container w-full mx-auto">
+      <div
+        class="cart-header-container text-center py-16 bg-cover bg-center text-white relative"
+        style="background-image: url('./images/bc.jpeg')"
+      >
+        <div
+          class="absolute inset-0 bg-gray-100 bg-opacity-50 backdrop-blur-sm"
+        ></div>
+        <div class="relative flex justify-center w-full">
+          <img
+            src="images/logo.png"
+            alt="Marmeto Logo"
+            class="w-[50px] h-[36px]"
+          />
+        </div>
+        <h1 class="relative text-4xl font-semibold text-black">Cart</h1>
+        <div class="relative text-lg mt-2 text-black">
+          <span class="font-semibold">Home &gt;</span> <span>Cart</span>
+        </div>
+      </div>
+
+      <div
+        class="cart-content flex gap-10 justify-between items-start px-20 mt-10"
+      >
+        <div class="product-details w-3/4">
+          <table class="cart-table w-full border-collapse mb-8">
+            <thead>
+              <tr class="bg-[#F9F1E7] text-left text-lg">
+                <th class="py-4 px-6">Product</th>
+                <th class="py-4 px-6">Price</th>
+                <th class="py-4 px-6">Quantity</th>
+                <th class="py-4 px-6">Subtotal</th>
+                <th class="py-4 px-6"></th>
+              </tr>
+            </thead>
+            <tbody class="quantity text-gray-800">
+              <!-- Cart items will be inserted here by JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Cart Totals Section -->
+        <div
+          class="cart-totals bg-[#F9F1E7] px-16 pt-4 pb-12 rounded-lg shadow-lg w-1/4"
+        >
+          <h2 class="text-2xl font-bold mb-8 text-center">Cart Totals</h2>
+          <p class="text-lg mb-2">
+            Subtotal: <span class="font-bold">₹0.00</span>
+          </p>
+          <p class="text-lg mb-4">
+            Total: <span class="text-[#B88E2F] font-bold">₹0.00</span>
+          </p>
+          <button
+            class="px-10 border border-2 border-black text-black font-semibold py-2 rounded-2xl uppercase hover:bg-gray-700 hover:text-white"
+          >
+            Check Out
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer flex justify-around bg-[#F9F1E7] py-20 mt-10">
+      <div class="flex justify-center items-center gap-2">
+        <img src="./images/trophy.png" alt="" class="w-[50px] h-[50px]" />
+        <div>
+          <p class="font-bold">High Quality</p>
+          <p class="text-[#898989]">crafted from top materials</p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center gap-2">
+        <img src="./images/Vector.png" alt="" class="w-[50px] h-[50px]" />
+        <div>
+          <p class="font-bold">Warranty Protection</p>
+          <p class="text-[#898989]">Over 2 years</p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center gap-2">
+        <img src="./images/shipping.png" alt="" class="w-[50px] h-[50px]" />
+        <div>
+          <p class="font-bold">Free Shipping</p>
+          <p class="text-[#898989]">Order over 150 $</p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center gap-2">
+        <img
+          src="./images/customer-support.png"
+          alt=""
+          class="w-[50px] h-[50px]"
+        />
+        <div>
+          <p class="font-bold">24 / 7 Support</p>
+          <p class="text-[#898989]">Dedicated support</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
